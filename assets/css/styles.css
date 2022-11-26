@@ -1,0 +1,62 @@
+:root {
+    --bg: rgba(25, 59, 102, 0.10);
+    --main: rgba(20, 121, 255, 1);
+    --mainPressed: rgba(164, 192, 228, 1);
+    --font: rgba(25, 59, 104, 1);
+    --fontAccent: rgba(20, 165, 255, 0.30);
+    --buttonFont: rgba(245, 245, 245, 0.83);
+    --buttonText: 24px;
+}
+
+body {
+    text-align: center;
+    background-color: var(--bg);
+    color: var(--font);
+}
+
+p {
+    font-size: 22px;
+}
+
+button {
+    width: 125px;
+    height: 65px;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 5px 7px 15px -1px rgba(0, 0, 0, 0.22);
+    font-size: var(--buttonText);
+    margin: 5px;
+    padding: 5px;
+}
+
+button:focus {
+    outline: none;
+}
+
+.sources {
+    display: inline-block;
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 0 10px 10px 10px;
+}
+
+.demo {
+    background-color: var(--main);
+    color: var(--buttonFont);
+    padding: 10px;
+}
+
+.demo:active {
+    background-color: var(--mainPressed);
+    color: black;
+}
+
+.demoActive {
+    background-color: rgb(35, 114, 35);
+    color: black;
+}
+
+.defaultButton:active {
+    background-color: var(--mainPressed);
+    color: black;
+}
